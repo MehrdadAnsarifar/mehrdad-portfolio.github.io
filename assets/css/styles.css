@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
@@ -11,7 +12,7 @@
   --first-color: hsl(var(--hue-color), 89%, 60%);
   --second-color: hsl(var(--hue-color), 56%, 12%);
   /*===== Fuente y tipografia =====*/
-  --body-font: "Poppins", sans-serif;
+  --body-font: "Inter", sans-serif;
   --big-font-size: 2rem;
   --h2-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -194,6 +195,10 @@ img {
 .home__title-color {
   color: var(--first-color);
 }
+.home__subtitle {
+  margin-top: -18px;
+  margin-bottom: 22px;
+}
 .home__social {
   display: flex;
   flex-direction: column;
@@ -218,6 +223,7 @@ img {
 }
 .home__blob-img {
   width: 360px;
+  background-image: none;
 }
 
 /*BUTTONS*/
@@ -272,10 +278,25 @@ img {
   border-radius: 0.5rem;
   box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
-.skills__icon {
+.skills_html {
   font-size: 2rem;
   margin-right: var(--mb-2);
-  color: var(--first-color);
+  color: rgb(255, 31, 31);
+}
+.skills_css {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: rgb(10, 185, 255);
+}
+.skills_javascript {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: rgb(255, 230, 0);
+}
+.skills_ui {
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: cadetblue;
 }
 .skills__names {
   display: flex;
@@ -294,13 +315,13 @@ img {
   width: 95%;
 }
 .skills__css {
-  width: 85%;
-}
-.skills__js {
   width: 65%;
 }
+.skills__js {
+  width: 25%;
+}
 .skills__ux {
-  width: 85%;
+  width: 90%;
 }
 .skills__img {
   border-radius: 0.5rem;
@@ -327,9 +348,10 @@ img {
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
+  font-family: "Inter";   
   padding: 1rem;
   border-radius: 0.5rem;
-  border: 1.5px solid var(--second-color);
+  border: 1.5px solid #c9c9c9;
   outline: none;
   margin-bottom: var(--mb-4);
 }
